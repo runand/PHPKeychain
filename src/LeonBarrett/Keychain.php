@@ -30,7 +30,7 @@ class KeyChain{
 		
 		exec('security 2>&1 >/dev/null add-generic-password -a '.$service_name.' -s "Login: '.$service_name.'" -w '.$password);	
 		
-		if(!get_password($service_name) return false;
+		if(!get_password($service_name)) return false;
 		
 		return true;	
 		
